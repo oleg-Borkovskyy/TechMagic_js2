@@ -6,3 +6,14 @@ export const searchRickCount = () => {
       : searchRickCurrentValue;
   };
 };
+
+let count = searchRickCount();
+
+/*
+// inner Lexical Environment
+{}
+// searchRickCount Lexical Environment
+{ searchRickCurrentValue: 0, ()=>: fn }
+// global Lexical Environment
+{ searchRickCount: fn, count: fn, ... }
+*/
